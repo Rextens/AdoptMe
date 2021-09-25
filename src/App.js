@@ -66,7 +66,7 @@ function App() {
               </div>
             </div>
           </div>
-
+        
           <Col xs={12} className="ChooseAdopt Section">
               <Row style={{width: '100%'}}>
                 <Col xs={2} className="">
@@ -91,54 +91,70 @@ function App() {
                 </Row>
           </Col>
 
-          <Col xs={12} className="Section">
-            <div className="ContentContainer">
-              <div className="Title">
-                <i className="icon-thumbs-up" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
-                How to be a hero!
-              </div>
-              <div className="Content">
-              Volunteer
-              Adopt Me is an organisation that is supported and enhanced by the efforts of our dedicated volunteers. From animal welfare roles to office duties and events, we strive to ensure that our volunteers are involved in all aspects of our work.
-              Sponsor an animal
-              Sponsor an animal from as little as £2 a month or make a one-off donation to help more animals
-              Donate old or unwanted items for the animals to enjoy
-              Many of your old and unwanted items can create a wonderful gift for a homeless animal. Every year, each of our centres get through hundreds of the following items:
-              Blankets,
-              Towels,
-              Bed Sheets,
-              Newspapers,
-              Dog food and treats,
-              Animal Toys.
-              If you’d like to donate any of the above items to your local centre, the animals will greatly appreciate your support.
-              </div>
+          <div className="SubBottomImage">
+            <div className="SubBottomContent">
+              <Col xs={12} md={5}>
+                <div className="ContentContainer">
+                  <div className="Title">
+                    <i className="icon-user" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
+                    Who Are We?
+                  </div>
+                  <div className="Content">
+                  Our mission is to bring about the day when all dogs can enjoy a happy life, free from the threat of unnecessary destruction. Our teams work together to create an individual plan for every dog – from medical treatment to behaviour training. And when the pet is ready, we find them a loving home where they can live a happy, fulfilling life.
+                  </div>
+                </div>
+              </Col>
+
+              <Col xs={12} md={6} >
+                <div className="ContentContainer">
+                  <div className="Title">
+                    <i className="icon-lightbulb" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
+                    Did You Know?
+                  </div>
+                  <div className="Content">
+                    { facts[getRandomInt(0, facts.length)] }
+                  </div>
+                </div>
+              </Col>
+            </div>
+          </div>
+
+          <Col xs={12} className="TextSection">
+            <Row>
+              <Col xs={12} md={6}>
+                <div className="ContentContainer">
+                  <div className="Title">
+                    <i className="icon-thumbs-up" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
+                    How to be a hero!
+                  </div>
+                  <div className="Content">
+                    Many of your old and unwanted items can create a wonderful gift for a homeless animal. Adopt Me is an organisation that is supported and enhanced by the efforts of our dedicated volunteers.
+                  </div>
+                </div>
+              </Col>
+
+              <Col xs={12} md={6}>
+                <div className="ContentContainer">
+                  <div className="Title">
+                    <i className="icon-user" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
+                    Who Are We?
+                  </div>
+                  
+                  <div className="Content">
+                  Who are we: Our mission is to bring about the day when all dogs can enjoy a happy life, free from the threat of unnecessary destruction.
+                  </div>
+                </div>
+              </Col>
+            </Row>
+    
+            <div className="BottomImage">
+                
             </div>
           </Col>
 
-          <Row noGutters>
-            <Col xs={12} className="Section">
-              <div className="ContentContainer">
-                <div className="Title">
-                  <i className="icon-user" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
-                  Who Are We?
-                </div>
-                <div className="Content">
-                Our mission is to bring about the day when all dogs can enjoy a happy life, free from the threat of unnecessary destruction. Our teams work together to create an individual plan for every dog – from medical treatment to behaviour training. And when the pet is ready, we find them a loving home where they can live a happy, fulfilling life.
-                </div>
-              </div>
-            </Col>
 
-            <Col xs={12} className="Section">
-              <div className="ContentContainer">
-                <div className="Title">
-                  <i className="icon-lightbulb" style={{fontSize: '40px', float: 'left', color: 'rgb(163, 0, 163)'}}/>
-                  Did You Know?
-                </div>
-                <div className="Content">
-                  { facts[getRandomInt(0, facts.length)] }
-                </div>
-              </div>
-            </Col>
+          <Row noGutters>
+            
 
             <Col xs={12} className="Footer Section">
               <div className="ContactContent">

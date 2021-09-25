@@ -1,7 +1,8 @@
 body
 {
-  background-image: url("unknown.png");
+  /*background-image: url("unknown.png");
   background-size: cover;
+  */
 }
 
 .Background
@@ -23,29 +24,62 @@ body
 {
   position: absolute;
   min-height: 100px;
-  max-width: 80% !important;
-  margin-left: 10%;
-  margin-right: 20px !important;
+  max-width: 100% !important;
   margin-top: 120px !important;
   z-index: 1;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .Section
 {
   background-color: white;
   box-shadow: 0 1.5px rgb(218, 218, 218);
-  margin-top: 100px !important;
-  width: 98% !important;
 }
 
 .TextSection
 {
   position: relative;
-  background-color: white;
   box-shadow: 0 1.5px rgb(218, 218, 218);
   margin-top: 5.2vw !important;
-  width: 98% !important;
-  clip-path: ellipse(100% 55% at 48% 44%);
+  width: 100% !important;
+  min-height: 400px;
+  clip-path: ellipse(200% 55% at 100% 44%);
+  transform: translateY(-980px);
+}
+
+.BottomImage
+{
+  min-height: 800px;
+  width: 100% !important;
+  background-image: linear-gradient(180deg,#ffffff 0%,rgba(255, 255, 255, 0) 100%), url("https://wallpaperaccess.com/full/1919752.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SubBottomImage
+{
+  min-height: 1000px;
+  width: 100% !important;
+  background-image: linear-gradient(360deg,#ffffff 0%,rgba(255, 255, 255, 0) 30%), url("https://www.dogs-wallpapers.eu/dog/mouth-small-dog-black.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(1000px);
+}
+
+.SubBottomContent
+{
+  position: absolute;
+  transform: translateY(200px);
+  color: #ffffff;
+}
+
+.BottomImageContent
+{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
 }
 
 .SectionContentContainer
@@ -226,8 +260,7 @@ body
 */
   position: relative;
   width: 120%;
-  top: -5.2vh;
-  left: -5.2vw;
+  transform: translateY(-200px);
 /*  transform: translate(-100px, 0px); */
 }
 
@@ -235,7 +268,7 @@ body
 {
   position: relative;
   top: -650px;
-  transform: translateY(-200px);
+  transform: translateY(-400px);
   margin-left: 19%;
   font-size: 2.1vw;
 }
@@ -311,8 +344,7 @@ body
 
   .TopImage
   {
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
-    transform: translate(0px, 40px);
+    transform: translate(0px, -30px);
   }
 
   .Topground
@@ -322,7 +354,7 @@ body
 
   .TopImageOverlay
   {
-    transform: scale(1.3) translate(0px, 400px);
+    transform: scale(1.3) translate(0px, 330px);
   }
   
   .ChooseAdopt
@@ -333,5 +365,16 @@ body
   .Logo
   {
     width: 100px;
+  }
+
+  .SubBottomImage
+  {
+    transform: translate(0px, 1550px);
+    min-height: 1300px;
+  }
+
+  .Footer
+  {
+    transform: translateY(200px);
   }
 }
